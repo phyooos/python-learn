@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from sort.TestHelper import *
 
 L = ['a', 'd', 'v', 's', 'g']
 L2 = [1,2,3,12,4,111,31,22,12,5435,21,53,222,3432]
@@ -13,4 +14,4 @@ def selectFunc(arrs):
     return arrs
 
 
-print(selectFunc(L2))
+testSort("选择",selectFunc,generateList(0,9999999,10000))
