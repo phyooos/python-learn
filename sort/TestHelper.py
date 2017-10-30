@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import random
 import time
+import numpy as np
 from datetime import datetime
 
 """
@@ -14,6 +15,9 @@ from datetime import datetime
 
 def generateList(start, end, size):
     return random.sample(range(start, end), size)
+
+def generateList2(start, end, size):
+    return np.random.randint(start,end,size=size)
 
 
 def printSortList(list):
